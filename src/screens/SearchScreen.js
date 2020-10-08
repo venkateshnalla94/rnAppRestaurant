@@ -1,14 +1,39 @@
 import React, {useState} from 'react';
-import {Text,View,StyleSheet} from 'react-native';
+import {Text,View,StyleSheet,ScrollView} from 'react-native';
 import SearchBar from "../components/SearchBar";
+import useResults from '../hooks/useResults'
+import ResultsList from "../components/ResultsList";
+
 
 const SearchScreen=()=>{
-     const [searchValue,setSearchValue]=useState(null);
+     const [term,setTerm]=useState('');
+     const [searchApi,results,errorMessage]=useResults();
+     
+     console.log(results);
+     /**
+      *
+      * @param price=$||$$||$$$
+      */
+     const filterByPrice=(price)=>{
+          return results.filter(results=>{
+               return results.price===price;
+          })
+     }
+     
      return(
-          <View>
-              <SearchBar term={searchValue} onTermChange={(newValue)=>setSearchValue(newValue)}/>
-              <Text>{searchValue}</Text>
-          </View>
+          <>
+              <SearchBar
+                   term={term}
+                   onTermChange={setTerm}
+                   onTermSubmit={()=> searchApi(term)}
+              />
+               {errorMessage ? <Text>{errorMessage}</Text>:null}
+               <ScrollView>
+                    <ResultsList results={filterByPrice('$')} title={'Cost Effective'}/>
+                    <ResultsList results={filterByPrice('$$')} title={"Bit Pricier"}/>
+                    <ResultsList results={filterByPrice('$$$')} title={"Big Spender"}/>
+               </ScrollView>
+          </>
           
      )
 }
