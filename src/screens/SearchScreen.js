@@ -3,7 +3,7 @@ import {Text,View,StyleSheet} from 'react-native';
 import SearchBar from "../components/SearchBar";
 
 const SearchScreen=()=>{
-     const [searchValue,setSearchValue]=useState("null");
+     const [searchValue,setSearchValue]=useState(null);
      return(
           <View>
               <SearchBar term={searchValue} onTermChange={(newValue)=>setSearchValue(newValue)}/>
