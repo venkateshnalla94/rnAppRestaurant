@@ -21,10 +21,11 @@ export default ()=>{
                setErrorMessage("Something Went Wrong");
           }
      }
-     
      useEffect(()=>{
           searchApi('pasta')
      },[])
      
      return [searchApi,results,errorMessage]
 }
+
+

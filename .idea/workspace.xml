@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03219f31-57e6-456d-a2db-2ea7977c9ce4" name="Default Changelist" comment="State set to null">
-      <change afterPath="$PROJECT_DIR$/src/api/yelp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ResultDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ResultsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useResults.js" afterDir="false" />
+    <list default="true" id="03219f31-57e6-456d-a2db-2ea7977c9ce4" name="Default Changelist" comment="Axios package introduced for API calls.&#10;Yelp API endpoints introduced.&#10;ResultDetail.js and ResultsList.js is added.&#10;Custom hook introduced.">
+      <change afterPath="$PROJECT_DIR$/src/screens/ResultShowScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResultsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useResults.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/SearchScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/SearchScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602109804013</updated>
-      <workItem from="1602109805781" duration="11658000" />
+      <workItem from="1602109805781" duration="14986000" />
     </task>
     <task id="LOCAL-00001" summary="RNApp boiler plate Setup">
       <created>1602115292429</created>
@@ -84,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602115339158</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Axios package introduced for API calls.&#10;Yelp API endpoints introduced.&#10;ResultDetail.js and ResultsList.js is added.&#10;Custom hook introduced.">
+      <created>1602153781608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602153781608</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,21 +98,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="RNApp boiler plate Setup" />
     <MESSAGE value="State set to null" />
-    <option name="LAST_COMMIT_MESSAGE" value="State set to null" />
+    <MESSAGE value="Axios package introduced for API calls.&#10;Yelp API endpoints introduced.&#10;ResultDetail.js and ResultsList.js is added.&#10;Custom hook introduced." />
+    <option name="LAST_COMMIT_MESSAGE" value="Axios package introduced for API calls.&#10;Yelp API endpoints introduced.&#10;ResultDetail.js and ResultsList.js is added.&#10;Custom hook introduced." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="95" y="23" key="CommitChangelistDialog2" timestamp="1602122440208">
+    <state x="95" y="23" key="CommitChangelistDialog2" timestamp="1602156278419">
       <screen x="0" y="23" width="1280" height="700" />
     </state>
-    <state x="95" y="23" key="CommitChangelistDialog2/0.23.1280.700@0.23.1280.700" timestamp="1602122440208" />
-    <state x="116" y="82" key="DiffContextDialog" timestamp="1602115327249">
+    <state x="95" y="23" key="CommitChangelistDialog2/0.23.1280.700@0.23.1280.700" timestamp="1602156278419" />
+    <state x="116" y="82" key="DiffContextDialog" timestamp="1602153679771">
       <screen x="0" y="23" width="1280" height="700" />
     </state>
-    <state x="116" y="82" key="DiffContextDialog/0.23.1280.700@0.23.1280.700" timestamp="1602115327249" />
-    <state x="140" y="50" key="Vcs.Push.Dialog.v2" timestamp="1602115341180">
+    <state x="116" y="82" key="DiffContextDialog/0.23.1280.700@0.23.1280.700" timestamp="1602153679771" />
+    <state x="140" y="48" key="Vcs.Push.Dialog.v2" timestamp="1602153784058">
       <screen x="0" y="23" width="1280" height="700" />
     </state>
-    <state x="140" y="50" key="Vcs.Push.Dialog.v2/0.23.1280.700@0.23.1280.700" timestamp="1602115341180" />
+    <state x="140" y="48" key="Vcs.Push.Dialog.v2/0.23.1280.700@0.23.1280.700" timestamp="1602153784058" />
     <state x="221" y="23" width="838" height="1032" key="search.everywhere.popup" timestamp="1602119455072">
       <screen x="0" y="23" width="1280" height="700" />
     </state>
